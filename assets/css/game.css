@@ -1,0 +1,194 @@
+:root {
+    --gray-btn: #ccc;
+    --black: #343a40;
+    --white: #fff;
+    --box-shape: #ccc;
+    --box-shape-border: #9E9E9E;
+    --heart-red: #ff0000;
+    --heart-gray: #757575;
+    --modal-content: #ececec;
+}
+
+.mr-left-5 {
+    margin-left: 5px
+}
+
+.mr-20 {
+    margin: 20px;
+}
+
+.box-shadow {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.container-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 1000px;
+    height: 1000px;
+}
+
+.box-shapes {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--box-shape);
+    border: var(--box-shape-border) 4px solid;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.panel-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 1000px;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.top-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+
+.down-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+
+}
+
+.down-panel > button {
+    margin: 5px 10px;
+}
+
+.top-panel div {
+    color: var(--black);
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 8px 5px 3px;
+}
+
+.icon-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative
+}
+
+.btn-score {
+    background: var(--gray-btn);
+}
+
+.btn-icon {
+    color: var(--white);
+    position: absolute;
+    left: 0.5em;
+    font-size: x-large;
+}
+
+.img-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.up-triangle {
+    width: 0;
+    height: 300px;
+    border: 80px solid transparent;
+    border-bottom-color: green;
+    position: absolute;
+    cursor: pointer;
+}
+
+.right-triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid blue;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    position: absolute;
+    cursor: pointer;
+}
+
+.left-triangle {
+    width: 0;
+    height: 0;
+    border-right: 100px solid blue;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    position: absolute;
+    cursor: pointer;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.trapezoid {
+    border-bottom: 100px solid red;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 80px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.modal-content {
+    background-color: var(--modal-content);
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart {
+    color: var(--heart-gray);
+    font-size: 30px;
+}
+
+.heart-main {
+    color: var(--heart-red);
+    font-size: 30px;
+}
+
+.fa-trophy {
+    color: gold;
+    font-size: 30px;
+}
