@@ -14,41 +14,39 @@
 <body>
     <div class="container-box">
         <div class="box box-shadow">
-            <div id="box-shapes" class="box-shapes">
+            <div id="boxShapesId" class="box-shapes">
             </div>
         </div>
         <div class="mr-left-5"></div>
         <div class="panel-box box-shadow">
             <div class="top-panel">
                     <div class="mr-20"></div>
-                <div class="icon-container btn-score">امتیاز :&nbsp;<i class="fas fa-trophy btn-icon"></i><span id="myScore">0</span></div>
-                <div class="icon-container btn-score"><i id="heart" class="fas fa-heart fa-2x btn-icon heart-main"></i><span id="myHeart">3</span></div>
+                <div class="icon-container btn-score">امتیاز :&nbsp;<i id="trophyId" class="fas fa-trophy btn-icon trophy-main"></i><span id="scoreId">0</span></div>
+                <div class="icon-container btn-score"><i id="heartId" class="fas fa-heart fa-2x btn-icon heart-main"></i><span id="heartCountId">3</span></div>
             </div>
             <div class="img-logo">
                 <img src="./assets/image/logo.png" style="width: 150px;height: 150px;">
             </div>
 
             <div class="down-panel">
-                <button type="button" id="btn-start" class="btn btn-success">شروع بازی</button>
-                <button type="button" id="btn-end" class="btn btn-secondary">پایان بازی</button>
+                <button type="button" id="startGameId" class="btn btn-success">شروع بازی</button>
+                <button type="button" id="endGameId" class="btn btn-secondary">پایان بازی</button>
                 <div class="mr-20"></div>
             </div>
         </div>
     </div>
 
     <div dir="rtl" class="container">
-        <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal fade" id="modalId" role="dialog">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">نتیجه بازی</h4>
                     </div>
-                    <div id="modal-body" class="modal-body">
-                        <p>امتیازات</p>
+                    <div id="modalBodyId" class="modal-body">
                     </div>
                     <div class="modal-footer">
-                        <button id="close-modal" type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+                        <button id="closeModalId" type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
                     </div>
                 </div>
             </div>
