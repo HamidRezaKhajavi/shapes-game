@@ -1,4 +1,4 @@
-const shapeWith = 140;
+const shapeWidth = 140;
 const defaultScore = 0;
 const defaultHeart = 3;
 const changeOpacity = 800;
@@ -8,7 +8,7 @@ let playing;
 let movingAllShapes;
 let allShapesClass = ["circle", "right-triangle", "triangle-left", "square", "trapezoid"];
 
-function generateRandomColor() {
+function createRandomColor() {
     return '#' + ('000000' + Math.floor(Math.random() * 16777215).toString(16)).slice(-6);
 }
 
@@ -27,21 +27,21 @@ function playGame() {
     div.classList.add(shapeClass);
     var boxWidth = boxShapes.width();
     var leftRandom = Math.floor(Math.random() * boxWidth);
-    if (leftRandom + shapeWith > boxWidth) {
-        leftRandom -= shapeWith;
+    if (leftRandom + shapeWidth > boxWidth) {
+        leftRandom -= shapeWidth;
     }
     div.style.top = -10 + "px";
     div.style.left = leftRandom + "px";
     div.style.opacity = 1;
 
     if (shapeClass === "trapezoid") {
-        div.style.borderBottomColor = generateRandomColor();
+        div.style.borderBottomColor = createRandomColor();
     } else if (shapeClass === "right-triangle") {
-        div.style.borderRightColor = generateRandomColor();
+        div.style.borderRightColor = createRandomColor();
     } else if (shapeClass === "triangle-left") {
-        div.style.borderRightColor = generateRandomColor();
+        div.style.borderRightColor = createRandomColor();
     } else {
-        div.style.backgroundColor = generateRandomColor();
+        div.style.backgroundColor = createRandomColor();
     }
     div.addEventListener("click", function () {
         div.remove();
